@@ -17,6 +17,7 @@ celerybeat.pid
 .env
 
 .DS_Store
+.idea/
 
 ### Node ###
 # Logs

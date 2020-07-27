@@ -34,7 +34,8 @@ ALLOWED_HOSTS = [env('ALLOWED_HOSTS')]
 
 # Application definition
 
-INSTALLED_APPS = [
+# Apps
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+LOCAL_APPS = [
+    'incomes'
+]
+
+EXTERNAL_APPS = [
+    'rest_framework'
+]
+
+INSTALLED_APPS = DJANGO_APPS + EXTERNAL_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
