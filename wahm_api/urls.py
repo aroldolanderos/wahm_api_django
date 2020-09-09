@@ -6,6 +6,7 @@ from rest_framework.authtoken.views import obtain_auth_token  # <-- Here
 
 urlpatterns = [
     path('incomes/', include('incomes.urls')),
+    path('expenses/', include('expenses.urls')),
     path('admin/', admin.site.urls),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
 ]
